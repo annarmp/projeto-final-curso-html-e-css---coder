@@ -1,0 +1,64 @@
+.aulas-lista {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.aulas-lista h2 {
+  margin-bottom: 40px;
+}
+
+.aulas-lista ul {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px 20px 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+}
+
+.aulas-lista li {
+  flex: 1;
+  min-width: 280px;
+}
+
+.aulas-lista a {
+  display: block;
+}
+
+.aulas-lista img {
+  margin-bottom: 16px;
+}
+
+.aulas-lista h3 {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.aulas-lista h3::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: var(--cor-p1);
+  transition: width 0.2s;
+}
+
+.aulas-lista a:hover h3::before {
+  width: 24px;
+}
+
+.aulas-lista li span {
+  padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .aulas-lista {
+    padding-bottom: 60px;
+  }
+  .aulas-lista ul {
+    gap: 20px;
+  }
+}
